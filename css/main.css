@@ -1,0 +1,454 @@
+@import url(https://fonts.googleapis.com/css?family=Berkshire+Swash);
+body{
+    font-family: "SF NS Display" , sans-serif;
+    font-size: 200%; // This is how you control the size
+padding: 2em;
+    background: linear-gradient(#c9e1e0, #fff) no-repeat;
+}
+.headline {
+    margin-bottom: .5em;
+    color: #b81313;
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: normal;
+    text-align: center;
+    text-shadow: 0 .05em .1em #fff;
+    animation-name: hover;
+    animation-iteration-count: infinite;
+    animation-duration: 3.5s;
+}
+
+@keyframes hover {
+    0% {
+        transform: translate3d(0, 0, 0);
+        color: #b81313;
+    }
+    50% {
+        transform: translate3d(0, -.2em, 0);
+        color: #db3e3e;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        color: #b81313;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0px 0px .3em rgba(255,255,255,.8);
+    }
+    50% {
+        box-shadow: 0px 0px .3em rgba(255,255,255,.4);
+    }
+    100% {
+        box-shadow: 0px 0px .3em rgba(255,255,255,.8);
+    }
+}
+
+table{
+    width: 500px;
+    margin: 150px 0;
+}
+table td{
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.fir {
+    position: absolute;
+    top: 300px;
+    right: 155px;
+    margin: 0 auto;
+    width: 4em;
+}
+.fir__item{
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 1.5em solid transparent;
+    border-right: 1.5em solid transparent;
+    border-bottom: 2.2em solid #16850c;
+}
+.fir__item:nth-child(2){
+    margin-top: -1.3em;
+    border-left-width: 1.8em;
+    border-right-width: 1.8em;
+    border-bottom-width: 2.5em;
+}
+.fir__item:nth-child(3){
+    margin-top: -1.7em;
+    border-left-width: 2em;
+    border-right-width: 2em;
+    border-bottom-width: 2.8em;
+}
+.fir__log{
+    margin: 0 auto;
+    width: 1.3em;
+    height: 1.3em;
+    background: #8c370f;
+    background: linear-gradient(#8c370f , #5c240a);
+}
+.orbs {
+    position: absolute;
+    width: .3em;
+    height: .3em;
+    border-radius: 50%;
+    box-shadow: 0px 0px .1em rgba(255,255,255,.8);
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+}
+.orbs:before,
+.orbs:after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px .3em rgba(255,255,255,.8);
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+}
+.orbs-1{
+    top: 1.5em;
+    left: 2.2em;
+    background: #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+.orbs-1:before{
+    top: 1.4em;
+    left: -.4em;
+    width: .3em;
+    height: .3em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+.orbs-1:after{
+    top: 1.4em;
+    left: -1.6em;
+    width: .3em;
+    height: .3em;
+    background:  #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+
+.orbs-2{
+    top: .4em;
+    left: 1.7em;
+    background: #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-2:before{
+    top: 2.4em;
+    left: .5em;
+    width: .3em;
+    height: .3em;
+    background:  #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-2:after{
+    top: 1.4em;
+    left: .8em;
+    width: .3em;
+    height: .3em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-3{
+    top: 3.9em;
+    left: 2.6em;
+    background: #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-3:before{
+    top: 2em;
+    left: 1.2em;
+    background:  #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-3:after{
+    top: -.1em;
+    left: -1.3em;
+    width: .3em;
+    height: .3em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-4{
+    top: 2.4em;
+    left: 1.5em;
+    width: .3em;
+    height: .3em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+
+.fir2 {
+    position: absolute;
+    top: 730px;
+    right: 118px;
+    margin: 0 auto;
+    width: 6em;
+}
+.fir__item2{
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 2.3em solid transparent;
+    border-right: 2.3em solid transparent;
+    border-bottom: 3em solid #16850c;
+}
+.fir__item2:nth-child(2){
+    margin-top: -1.3em;
+    border-left-width: 3em;
+    border-right-width: 3em;
+    border-bottom-width: 3.5em;
+}
+.fir__item2:nth-child(3){
+    margin-top: -1.7em;
+    border-left-width: 3.7em;
+    border-right-width: 3.7em;
+    border-bottom-width: 4em;
+    position: relative;
+    left: -25px;
+}
+.fir__log2{
+    margin: 0 auto;
+    width: 2.3em;
+    height: 2.3em;
+    background: #8c370f;
+    background: linear-gradient(#8c370f , #5c240a);
+}
+.orbs2 {
+    position: absolute;
+    width: .6em;
+    height: .6em;
+    border-radius: 50%;
+    box-shadow: 0px 0px .1em rgba(255,255,255,.8);
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+}
+.orbs2:before,
+.orbs2:after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px .3em rgba(255,255,255,.8);
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+}
+.orbs-5{
+    top: 1.8em;
+    left: 2.2em;
+    background: #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+.orbs-5:before{
+    top: 1.4em;
+    left: .4em;
+    width: .6em;
+    height: .6em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+.orbs-5:after{
+    top: 2.8em;
+    left: -1.3em;
+    width: .6em;
+    height: .6em;
+    background:  #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+
+.orbs-6{
+    top: .8em;
+    left: 2.4em;
+    background: #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-6:before{
+    top: 1em;
+    left: 1em;
+    width: .6em;
+    height: .6em;
+    background:  #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-6:after{
+    top: 3.5em;
+    left: 2em;
+    width: .6em;
+    height: .6em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-7{
+    top: 3.9em;
+    left: 2.6em;
+    background: #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-7:before{
+    top: 3em;
+    left: 2.2em;
+    background:  #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-7:after{
+    top: 2em;
+    left: -1.3em;
+    width: .6em;
+    height: .6em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-8{
+    top: 6.4em;
+    left: 4.5em;
+    width: .6em;
+    height: .6em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.fir3 {
+    position: absolute;
+    top: 1170px;
+    right: 50px;
+    margin: 0 auto;
+    width: 10em;
+}
+.fir__item3{
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 3.3em solid transparent;
+    border-right: 3.3em solid transparent;
+    border-bottom: 4em solid #16850c;
+}
+.fir__item3:nth-child(2){
+    margin-top: -1.3em;
+    border-left-width: 4.4em;
+    border-right-width: 4.4em;
+    border-bottom-width: 5em;
+}
+.fir__item3:nth-child(3){
+    margin-top: -1.7em;
+    border-left-width: 5.2em;
+    border-right-width: 5.2em;
+    border-bottom-width: 6em;
+    position: relative;
+    left: -10px;
+}
+.fir__log3{
+    margin: 0 auto;
+    width: 3.3em;
+    height: 3.3em;
+    background: #8c370f;
+    background: linear-gradient(#8c370f , #5c240a);
+}
+.orbs3 {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    box-shadow: 0px 0px .1em rgba(255,255,255,.8);
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+}
+.orbs3:before,
+.orbs3:after{
+    content: '';
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0px 0px .10em rgba(255,255,255,.8);
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    animation-duration: 2.5s;
+}
+.orbs-9{
+    top: 3.8em;
+    left: 4.9em;
+    background: #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+.orbs-9:before{
+    top: 6.4em;
+    left: 2em;
+    width: 1em;
+    height: 1em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+.orbs-9:after{
+    top: 2.3em;
+    left: 1.9em;
+    width: 1em;
+    height: 1em;
+    background:  #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+
+.orbs-10{
+    top: 1em;
+    left: 4.4em;
+    background: #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-10:before{
+    top: 8em;
+    left: -1em;
+    width: 1em;
+    height: 1em;
+    background:  #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-10:after{
+    top: 8.9em;
+    left: -2em;
+    width: 1em;
+    height: 1em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-11{
+    top: 3.4em;
+    left: 3.6em;
+    background: #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-11:before{
+    top: 3em;
+    left: 2.2em;
+    background:  #e7c400;
+    background: radial-gradient(circle, #fbeea3, #e7c400);
+}
+.orbs-11:after{
+    top: 2em;
+    left: -1.3em;
+    width: 1em;
+    height: 1em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+
+.orbs-12{
+    top: 6.4em;
+    left: 4.5em;
+    width: 1em;
+    height: 1em;
+    background:  #ed0000;
+    background: radial-gradient(circle, #f77373, #ed0000);
+}
+
