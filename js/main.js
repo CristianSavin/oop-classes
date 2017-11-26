@@ -1,79 +1,79 @@
 /* CLASSES IN JAVASCRIPT EXAMPLE USE */
-class user{
-    constructor(f_name , l_name , password, email , phone_number){
-        this.f_name = f_name;
-        this.l_name = l_name;
-        this.password = password;
-        this.email = email;
-        this.phone_number = phone_number;
-        this.avatar = "http://wicklownews.net/wp-content/uploads/2015/08/Minion.jpg";
-    }
-}
+// class user{
+//     constructor(f_name , l_name , password, email , phone_number){
+//         this.f_name = f_name;
+//         this.l_name = l_name;
+//         this.password = password;
+//         this.email = email;
+//         this.phone_number = phone_number;
+//         this.avatar = "http://wicklownews.net/wp-content/uploads/2015/08/Minion.jpg";
+//     }
+// }
+//
+// function get_info(){
+//     let users = new user(document.getElementById("f_name").value , document.getElementById("l_name").value , document.getElementById("password").value,
+//         document.getElementById("email").value , document.getElementById("phone_number").value ,
+//     );
+//     var el = document.querySelector('form');
+//     var matches = el.querySelectorAll('input[name]');
+//     for (var m = 0; m < users.length; m++){
+//         var user_arr = users[m];
+//     }
+//     document.write(`
+//            <table>
+//                 <tr>
+//
+//                 </tr>
+//            </table>
+//     `)
+// }
 
-function get_info(){
-    let users = new user(document.getElementById("f_name").value , document.getElementById("l_name").value , document.getElementById("password").value,
-        document.getElementById("email").value , document.getElementById("phone_number").value ,
-    );
-    var el = document.querySelector('form');
-    var matches = el.querySelectorAll('input[name]');
-    for (var m = 0; m < users.length; m++){
-        var user_arr = users[m];
-    }
-    document.write(`
-           <table>
-                <tr>
-
-                </tr>
-           </table>
-    `)
-}
-
-class developer{
-    constructor(nume , prenume , experience , salary){
-        this.nume = nume;
-        this.prenume = prenume;
-        this.experience = experience;
-        this.salary = salary;
-    }
-    show_info(){
-        document.write(`
-            <table border="1px">
-                <tr>
-                    <td>
-                        Nume
-                    </td>
-                    <td>
-                        ${this.nume}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Prenume
-                    </td>
-                    <td>
-                        ${this.prenume}
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        Experienta
-                    </td>
-                    <td>
-                        ${this.experience}
-                    </td>
-                </tr>
-                <tr>
-                     <td>
-                        Salariu
-                    </td>
-                    <td>
-                        ${this.salary}
-                    </td>
-                </tr>
-            </table>
-        `)
-    }
-}
+// class developer{
+//     constructor(nume , prenume , experience , salary){
+//         this.nume = nume;
+//         this.prenume = prenume;
+//         this.experience = experience;
+//         this.salary = salary;
+//     }
+//     show_info(){
+//         document.write(`
+//             <table border="1px">
+//                 <tr>
+//                     <td>
+//                         Nume
+//                     </td>
+//                     <td>
+//                         ${this.nume}
+//                     </td>
+//                 </tr>
+//                 <tr>
+//                     <td>
+//                         Prenume
+//                     </td>
+//                     <td>
+//                         ${this.prenume}
+//                     </td>
+//                 </tr>
+//                 <tr>
+//                     <td>
+//                         Experienta
+//                     </td>
+//                     <td>
+//                         ${this.experience}
+//                     </td>
+//                 </tr>
+//                 <tr>
+//                      <td>
+//                         Salariu
+//                     </td>
+//                     <td>
+//                         ${this.salary}
+//                     </td>
+//                 </tr>
+//             </table>
+//         `)
+//     }
+// }
 
 var dev = new developer(prompt("Introduceti Numele dvs") , prompt("Introduceti Prenumele dvs."),
             prompt("Introduceti experienta dvs") , prompt("Introduceti salariul dvs."));
@@ -103,11 +103,11 @@ class Image{
 
 }
 /////////// Obiectul real
-var logo = new Image("https://soyeon12.files.wordpress.com/2013/07/dm2_minion_dave_020.jpg" , 120 , 60);
-var baner = new Image("https://www.independent.ie/incoming/article34320338.ece/ALTERNATES/h342/minions1.jpg" , 320 , 800);
-
-logo.show();
-baner.show();
+// var logo = new Image("https://soyeon12.files.wordpress.com/2013/07/dm2_minion_dave_020.jpg" , 120 , 60);
+// var baner = new Image("https://www.independent.ie/incoming/article34320338.ece/ALTERNATES/h342/minions1.jpg" , 320 , 800);
+//
+// logo.show();
+// baner.show();
 
 class Brad{
     constructor(height , specie , provenenta , culoare, virsta, pret){
