@@ -128,184 +128,6 @@ class Brad{
         this.pret = pret;
     }
     show_brad(){
-        document.getElementById("trees").innerHTML = `
-            <table border="1px">
-                <tr> 
-                    <th> 
-                        Proprietatile bradului
-                    </th>
-                    <th> 
-                        Valoarile
-                    </th>
-                </tr> 
-                <tr> 
-                    <td> 
-                        Inaltimea bradului
-                    </td>
-                    <td> 
-                        ${bradulet.inaltime}
-                    </td>
-                </tr>
-                <tr> 
-                    <td> 
-                        Specia bradului
-                    </td>
-                    <td> 
-                        ${bradulet.specie}
-                    </td>
-                </tr>
-                 <tr> 
-                    <td> 
-                        Unde a fost crescut bradul
-                    </td>
-                    <td> 
-                        ${bradulet.provenenta}
-                    </td>
-                </tr>
-                <tr> 
-                    <td> 
-                        Culoarea bradului
-                    </td>
-                    <td> 
-                        ${bradulet.culoare}
-                    </td>
-                </tr>
-                <tr> 
-                    <td> 
-                        Virsta bradului
-                    </td>
-                    <td> 
-                        ${bradulet.virsta}
-                    </td>
-                </tr>
-                 <tr> 
-                    <td> 
-                        Pretul bradului
-                    </td>
-                    <td> 
-                        ${bradulet.pret}
-                    </td>
-                </tr>
-            </table>
-            
-            <table border="1px"> 
-                <tr> 
-                    <th> 
-                        Proprietatile bradului
-                    </th>
-                    <th> 
-                        Valoarile
-                    </th>
-                </tr>
-                <tr> 
-                    <td> 
-                        Inaltimea bradului
-                    </td>
-                    <td> 
-                        ${brad.inaltime}
-                    </td>
-                </tr>
-                <tr> 
-                    <td> 
-                        Specia bradului
-                    </td>
-                    <td> 
-                        ${brad.specie}
-                    </td>
-                </tr>
-                 <tr> 
-                    <td> 
-                        Unde a fost crescut bradul
-                    </td>
-                    <td> 
-                        ${brad.provenenta}
-                    </td>
-                </tr>
-                <tr> 
-                    <td> 
-                        Culoarea bradului
-                    </td>
-                    <td> 
-                        ${brad.culoare}
-                    </td>
-                </tr>
-                <tr> 
-                    <td> 
-                        Virsta bradului
-                    </td>
-                    <td> 
-                        ${brad.virsta}
-                    </td>
-                </tr>
-                 <tr> 
-                    <td> 
-                        Pretul bradului
-                    </td>
-                    <td> 
-                        ${brad.pret}
-                    </td>
-                </tr>
-            </table>
-            
-            <table border="1px"> 
-                 <tr> 
-                    <th> 
-                        Proprietatile bradului
-                    </th>
-                    <th> 
-                        Valoarile
-                    </th>
-                </tr>
-                <tr> 
-                    <td> 
-                        Inaltimea bradului
-                    </td>
-                    <td> 
-                        ${brad_mare.inaltime}
-                    </td>
-                </tr>
-                <tr> 
-                    <td> 
-                        Specia bradului
-                    </td>
-                    <td> 
-                        ${brad_mare.specie}
-                    </td>
-                </tr>
-                 <tr> 
-                    <td> 
-                        Unde a fost crescut bradul
-                    </td>
-                    <td> 
-                        ${brad_mare.provenenta}
-                    </td>
-                </tr>
-                <tr> 
-                    <td> 
-                        Culoarea bradului
-                    </td>
-                    <td> 
-                        ${brad_mare.culoare}
-                    </td>
-                </tr>
-                <tr> 
-                    <td> 
-                        Virsta bradului
-                    </td>
-                    <td> 
-                        ${brad_mare.virsta}
-                    </td>
-                </tr>
-                 <tr> 
-                    <td> 
-                        Pretul bradului
-                    </td>
-                    <td> 
-                        ${brad_mare.pret}
-                    </td>
-                </tr>
-            </table>
-        `;
 
         document.getElementById("trees").innerHTML += `
             <div class="fir">
@@ -321,6 +143,8 @@ class Brad{
                 <div class="orbs orbs-4"></div>
             </div>
         `;
+
+        
 
         document.getElementById("trees").innerHTML += `
             <div class="fir2">
@@ -355,9 +179,15 @@ class Brad{
     }
 }
 
-var bradulet = new Brad("185 cm" , "Pin" , "In sera" , "Verde imperial" , "1 ani" , "1200 lei");
-var brad = new Brad("320 cm" , "Pin" , "In sera" , "Verde spanac" , "2.5 ani" , "2550 lei");
-var brad_mare = new Brad("490 cm" , "Pin" , "In parc" , "Verde gazon" , "5 ani" , "3500 lei");
+var bradulet = new Brad(prompt("Scrieti inaltimea primului brad") , prompt("Scrieti specia primului brad") ,
+    prompt("Scrieti locul in care a fost crescut primul brad") , prompt("Scrieti culoarea primului brad") ,
+    prompt("Scrieti virsta primului brad") , prompt("Scrieti pretul primului brad"));
+var brad = new Brad(prompt("Scrieti inaltimea la al doilea brad") , prompt("Scrieti specia la al doilea brad") ,
+    prompt("Scrieti locul in care a fost crescut al doilea brad") , prompt("Scrieti culoarea la al doilea brad") ,
+    prompt("Scrieti virsta la al doilea brad") , prompt("Scrieti pretul la al doilea brad"));
+var brad_mare = new Brad(prompt("Scrieti inaltimea la al treilea brad") , prompt("Scrieti specia la al treilea brad") ,
+    prompt("Scrieti locul in care a fost crescut al treilea brad") , prompt("Scrieti culoarea la al treilea brad") ,
+    prompt("Scrieti virsta la al treilea brad") , prompt("Scrieti pretul la al treilea brad"));
 
 
 /* show facem la brad si sa se deseneze bradul prin document.write prin css  si sa fie identic cu parametrii care intra
